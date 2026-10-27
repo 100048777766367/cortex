@@ -8,15 +8,11 @@ class GitHubDispatchTransceiver:
         url = f"https://api.github.com/repos/{owner}/{target_repo}/dispatches"
         payload = json.dumps({"event_type": event_type, "client_payload": {"sender": "cortex"}}).encode('utf-8')
         try:
-            req = urllib.request.Request(
-                url, data=payload,
-                headers={
-                    "Authorization": f"token {token}",
-                    "Accept": "application/vnd.github.v3+json",
-                    "User-Agent": "Cortex-Dispatcher"
-                }
-            )
-            with urllib.request.urlopen(req, timeout=4) as resp:
+            req = urllib.request.Request(url, data=payload, headers={
+                "Authorization": f"token {token}",
+                "Accept": "application/vnd.github.v3+json",
+                "User-Agent": "Cortex-Dispatcher"
+            })
+            with urllib.request.urlopen(req, timeout=3.0) as resp:
                 return resp.status == 204
-        except Exception:
-            return False
+        except Exception: return False
