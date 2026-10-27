@@ -1,0 +1,13 @@
+{
+    "contract_id": "bodhi.cortex.v1",
+    "derived_node": "100048777766367/cortex",
+    "role": "MULTIFREQUENCY_NEOCORTICAL_CORE",
+    "transceivers": [
+        "git_native",
+        "github_dispatch",
+        "github_releases",
+        "mqtt_mesh",
+        "nostr",
+        "ipfs"
+    ]
+}

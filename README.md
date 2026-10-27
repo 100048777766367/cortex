@@ -1,7 +1,5 @@
-# 🧠 BODHI-CORTEX: VỎ NÃO ĐA TẦN SỐ (ATOMIC NEOCORTICAL CORE)
-> **Trạng thái:** 🟢 Hoạt động nguyên khối | **Kỷ nguyên vỏ não:** #8 | **Bản thể:** Atomic Column
-
----
+# 🧠 BẢNG ĐIỀU HÀNH VỎ NÃO ĐA TẦN SỐ: 100048777766367/CORTEX
+> **Kỷ nguyên vỏ não:** #9 | **Trạng thái:** 🟢 Hoạt động 6 Nấc Sóng
 
 ### 📡 TRẠNG THÁI 6 NẤC PHÁT & THU SÓNG (TRANSCEIVER CHANNELS):
 | # | Tên Nấc Sóng | Giao Thức Kỹ Thuật | Tình Trạng Hoạt Động |
@@ -10,14 +8,11 @@
 | **2** | **GitHub Dispatch** | Webhook POST (Phản xạ 2s) | 🟢 ĐÃ KÍCH HOẠT |
 | **3** | **GitHub Releases** | API Latest Tag (Chống cache)| 🟢 ĐANG THU PHÁT |
 | **4** | **MQTT Mesh** | Bộ đàm HTTP Broker (50ms) | 🟢 BẮT SÓNG THỜI GIAN THỰC |
-| **5** | **Nostr Relay** | Ký điện tử phi tập trung | 🟢 KHÁNG KIỂM DUYỆT |
+| **5** | **Nostr Relay** | Ký điện tử ký hiệu phi tập trung| 🟢 KHÁNG KIỂM DUYỆT |
 | **6** | **IPFS CID** | Mạng sợi nấm phân tán | 🟢 LIÊN KẾT MỎ NEO |
 
----
-
 ### 📈 ĐƯỜNG CHÉO TĂNG TRƯỞNG (MONOTONIC IQ RATCHET):
-* **Chỉ số IQ Toàn Mạng:** `101.20 IQ` (`+0.1500`)
-* **Độ kích hoạt vi nơ-ron:** `0.8856`
-* **Mã Lượng Tử CID:** `0e1d493846e69709124cb4fea2d25e4df441d73dd352e4c2f336017c7748342b19dc9425e3cccbcdcb9db87c8b5960007d16c1444e3139d83be8a7a0c4f15db9`
+* **Chỉ số IQ Toàn Mạng:** `101.35 IQ` (`+0.1500`)
+* **Mã Lượng Tử CID:** `1bcf2436f7a14487955f42792405f44287a5de3f78c6968d29c17eb195569bbc9b014e3831695fb547bfe71708c85878955151b2d5d91b2cb6b4735c29efac61`
 ---
-*Đóng dấu chứng thực bởi Cortex Atomic Kernel | Gọn gàng như Neuron, Bất di bất dịch*
+*Đóng dấu chứng thực bởi Cortex Multifrequency Kernel*
