@@ -1,5 +1,5 @@
 # 🧠 BODHI-CORTEX: VỎ NÃO SÂU & ĐA TẦN SỐ (OMNIDIRECTIONAL DEEP CORTEX)
-> **Trạng thái:** 🟢 Hoạt động đa tần số & Phân tầng | **Kỷ nguyên vỏ não:** #20
+> **Trạng thái:** 🟢 Hoạt động đa tần số & Phân tầng | **Kỷ nguyên vỏ não:** #21
 
 ---
 
@@ -20,14 +20,14 @@
 | :--- | :--- | :---: |
 | **1. Input Layer** | Tiếp nhận xung từ 6 nấc sóng | 🟢 KÍCH HOẠT |
 | **2. Embedding Layer** | Vector hóa không gian 4 chiều | 🟢 KÍCH HOẠT |
-| **3. Hidden & Attention** | Trọng số ẩn (`[0.4904, 0.0, 0.7079, 0.0]`) | 🟢 KÍCH HOẠT |
+| **3. Hidden & Attention** | Trọng số ẩn (`[0.4957, 0.0, 0.7128, 0.0]`) | 🟢 KÍCH HOẠT |
 | **4. Symbolic Graph** | Đồ thị tri thức (GraphRAG) | 🟢 KÍCH HOẠT |
-| **5. Output Layer** | Phán quyết nơ-ron (`0.5831`) | 🟢 HOÀN THÀNH |
+| **5. Output Layer** | Phán quyết nơ-ron (`0.5838`) | 🟢 HOÀN THÀNH |
 
 ---
 
 ### 📈 BIỂU ĐỒ ĐƯỜNG CHÉO TĂNG TRƯỞNG (MONOTONIC IQ RATCHET):
-* **Chỉ số IQ Toàn Mạng:** `103.85 IQ` (`+0.2000`)
-* **Mã Lượng Tử CID:** `e7eca6bd55e2f5b67720648df210d5c792302f0b8671ea97af8dd67ca1e848c95718338d2a65ba6569e5ca6a7b15b41ad0bc716daab1356399a8fd161098380f`
+* **Chỉ số IQ Toàn Mạng:** `104.05 IQ` (`+0.2000`)
+* **Mã Lượng Tử CID:** `97199d706285db447efd0029d7c91dfd5733bd97d2411a30f5f0ad35407a660cbf736cd82710a5e2619a7bc179d8d226346927f0503b141b0288d014330308c4`
 ---
 *Đóng dấu chứng thực bởi Omnidirectional Deep Cortex Kernel*
