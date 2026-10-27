@@ -1,0 +1,54 @@
+name: Cortex Multifrequency Lifecycle
+
+on:
+  push:
+    branches: [ main, master ]
+  repository_dispatch:
+    types: [ WAKE_UP_CORTEX, SYNAPSE_PULSE ]
+  workflow_dispatch:
+  schedule:
+    - cron: '30 */4 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  run-cortex-node:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kéo mã nguồn Cortex
+        run: |
+          git clone --depth 1 https://github.com/${{ github.repository }}.git .
+
+      - name: Thiết lập môi trường Python 3.14
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+
+      - name: Vận hành Hạt Nhân Vỏ Não Đa Tần Số
+        env:
+          REPO_OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python kernel.py
+
+      - name: Lưu vết tiến hóa bọc thép lên Git
+        run: |
+          git config --global user.name "Cortex-Transceiver-Bot"
+          git config --global user.email "bot@cortex.mesh"
+          
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          
+          TARGET_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+          [ "$TARGET_BRANCH" = "HEAD" ] || [ -z "$TARGET_BRANCH" ] && TARGET_BRANCH="main"
+
+          git fetch origin "$TARGET_BRANCH"
+          git reset origin/"$TARGET_BRANCH"
+          
+          git add -A
+          
+          if ! git diff --staged --quiet; then
+            git commit -m "🧠 [Cortex Multi-Wave] Đồng bộ sóng thần kinh đa tần số #(1+N) [skip ci]"
+            git push origin "$TARGET_BRANCH"
+          else
+            echo "Vỏ não tĩnh lặng, không có biến thiên mới."
+          fi
